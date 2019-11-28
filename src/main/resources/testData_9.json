@@ -1,0 +1,39 @@
+{
+  "fixtureId": "9",
+  "fixtureStatus": {
+    "displayed": false,
+    "suspended": true
+  },
+  "footballFullState": {
+    "homeTeam": "Dagenham & Redbridge",
+    "awayTeam": "Österreich",
+    "finished": false,
+    "gameTimeInSeconds": 2656,
+    "goals": [
+      {
+        "clockTime": 640,
+        "confirmed": true,
+        "id": 678606,
+        "ownGoal": false,
+        "penalty": false,
+        "period": "FIRST_HALF",
+        "playerId": 560617,
+        "teamId": "1"
+      }
+    ],
+    "period": "SECOND_HALF",
+    "possibles": [],
+    "corners": [],
+    "redCards": [],
+    "yellowCards": [],
+    "startDateTime": "2018-03-20T10:49:38.655Z",
+    "started": true,
+    "teams": [
+      {
+        "association": "HOME",
+        "name": "Dagenham-&-Redbridge",
+        "teamId": "HOME"
+      }
+    ]
+  }
+}

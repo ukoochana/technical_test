@@ -1,0 +1,286 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Creating and deleting a new fixture",
+        "description": "",
+        "id": "create-and-delete-a-new-fixture;creating-and-deleting-a-new-fixture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7257120064,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I ensure to perform POST new fixture",
+            "match": {
+              "location": "DeleteFixtureSteps.I_ensure_to_perform_POST_new_fixture()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 193291258,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I perform GET operation for new fixture",
+            "match": {
+              "location": "DeleteFixtureSteps.I_perform_GET_operation_for_new_fixture()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174012933,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I perform DELETE operation for that new fixture",
+            "match": {
+              "location": "DeleteFixtureSteps.I_perform_DELETE_operation_for_that_new_fixture()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 65511268,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Assert that the new fixture no longer exists",
+            "match": {
+              "location": "DeleteFixtureSteps.I_Assert_that_the_new_fixture_no_longer_exists()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create and delete a new fixture",
+    "description": "",
+    "id": "create-and-delete-a-new-fixture",
+    "keyword": "Feature",
+    "uri": "deleteFixture.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Assert that there are 3 fixtures within the returned object",
+        "description": "",
+        "id": "retrieve-all-the-fixtures.;assert-that-there-are-3-fixtures-within-the-returned-object",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1427185,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I perform get operation for fixtures",
+            "match": {
+              "location": "GetFixtureSteps.I_perform_get_operation_for()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1255780249,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Assert that there are 3 fixtures within the returned object",
+            "match": {
+              "location": "GetFixtureSteps.I_should_see_all_the_three_fixturesx()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Assert that each of the 3 fixtures has a fixtureId value",
+        "description": "",
+        "id": "retrieve-all-the-fixtures.;assert-that-each-of-the-3-fixtures-has-a-fixtureid-value",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1778265,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I perform get operation for fixtures",
+            "match": {
+              "location": "GetFixtureSteps.I_perform_get_operation_for()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 81109532,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Assert that each of the three fixtures has a fixtureId value",
+            "match": {
+              "location": "GetFixtureSteps.Assert_that_each_of_the_fixtures_has_a_fixtureId_value()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Retrieve all the fixtures.",
+    "description": "",
+    "id": "retrieve-all-the-fixtures.",
+    "keyword": "Feature",
+    "uri": "getFixture.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Post the new fixture",
+        "description": "",
+        "id": "post-a-new-fixture-by-using-the-model-guide-in-`apidocs.html`;post-the-new-fixture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 969749,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have postRequestBody",
+            "match": {
+              "location": "PostFixtureSteps.I_have_postRequestBody()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4039030350,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I post the post_end_point",
+            "match": {
+              "location": "PostFixtureSteps.I_post_the_post_end_point()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22339500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see new fixture created",
+            "match": {
+              "location": "PostFixtureSteps.I_should_see_new_fixture_created()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17423775,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I perform DELETE operation for that new fixture",
+            "match": {
+              "location": "DeleteFixtureSteps.I_perform_DELETE_operation_for_that_new_fixture()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Assert, within the `teams` array, that the first object has a `teamId` of \u0027HOME\u0027",
+        "description": "",
+        "id": "post-a-new-fixture-by-using-the-model-guide-in-`apidocs.html`;assert,-within-the-`teams`-array,-that-the-first-object-has-a-`teamid`-of-\u0027home\u0027",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 942926,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I have postRequestBody",
+            "match": {
+              "location": "PostFixtureSteps.I_have_postRequestBody()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3018911346,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I post the post_end_point",
+            "match": {
+              "location": "PostFixtureSteps.I_post_the_post_end_point()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14823409,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see new fixture created",
+            "match": {
+              "location": "PostFixtureSteps.I_should_see_new_fixture_created()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34919637,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Assert the first object has a teamId of HOME",
+            "match": {
+              "location": "PostFixtureSteps.Assert_the_first_object_has_a_teamId_of_HOME()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18715480,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I perform DELETE operation for that new fixture",
+            "match": {
+              "location": "DeleteFixtureSteps.I_perform_DELETE_operation_for_that_new_fixture()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Post a new fixture by Using the model guide in `apiDocs.html`",
+    "description": "",
+    "id": "post-a-new-fixture-by-using-the-model-guide-in-`apidocs.html`",
+    "keyword": "Feature",
+    "uri": "postFixture.feature"
+  }
+]

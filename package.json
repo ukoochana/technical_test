@@ -1,0 +1,15 @@
+{
+  "name": "tsg-technical-tester-assessment",
+  "version": "1.0.0",
+  "description": "Software Enigineer in Test - Technical Tester Assessment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "The Stars Group",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
