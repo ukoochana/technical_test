@@ -29,13 +29,11 @@ public class GetFixtureSteps {
     @Then("^Assert that there are 3 fixtures within the returned object$")
     public void I_should_see_all_the_three_fixturesx() throws Throwable {
         when()
-                .get(URL+"/fixtures")
+                .get(URL + "/fixtures")
         .then()
                 .assertThat()
                 .statusCode(200)
-                .body("fixtureId[0]", equalTo("1"))
-                .body("fixtureId[1]", equalTo("2"))
-                .body("fixtureId[2]", equalTo("3"));
+                .body("size()", is(3));
 
     }
 
@@ -46,6 +44,8 @@ public class GetFixtureSteps {
         .then()
                 .assertThat()
                 .statusCode(200)
-                .body("size()", is(3));
+                .body("fixtureId[0]", equalTo("1"))
+                .body("fixtureId[1]", equalTo("2"))
+                .body("fixtureId[2]", equalTo("3"));
     }
 }
